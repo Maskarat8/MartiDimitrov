@@ -21,12 +21,12 @@ public class StudentFinancialAid {
 	public static void displayStudentsEligible(Student students[]) {
 		for (Student s : students) {
 			if(isStudentEligible(s)) {
-				System.out.println(s.name);
+				System.out.println(s.getName());
 			}
 		}
 	}
 	public static boolean isStudentEligible(Student student) {
-		return student.grade > 5.50;
+		return student.getGrade() > 5.50;
 	}
 
 }

@@ -1,7 +1,7 @@
 package conko1;
 
 public class Circle {
-	public double radius;
+	private double radius;
 	
 	public Circle() {
 		radius = 1;	
@@ -15,8 +15,10 @@ public class Circle {
 	public double getPerimeter() {
 		return Math.PI * radius * 2;
 	}
-	public void setRadius(double newRadius) {
+	public void setRadius (double newRadius) {
 		radius = newRadius;
 	}
-
+	public double getRadius() {
+		return radius;
+	}
 }
